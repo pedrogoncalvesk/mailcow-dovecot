@@ -90,7 +90,8 @@ RUN chmod +x /usr/local/lib/dovecot/sieve/rspamd-pipe-ham \
 	/usr/local/lib/dovecot/sieve/rspamd-pipe-spam \
 	/usr/local/bin/imapsync_cron.pl \
 	/usr/local/bin/postlogin.sh \
-	/usr/local/bin/imapsync
+	/usr/local/bin/imapsync \
+	/docker-entrypoint.sh
 
 RUN groupadd -g 5000 vmail \
 	&& groupadd -g 401 dovecot \
